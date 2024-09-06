@@ -151,78 +151,56 @@
             color: #555;
         }
 
-        /* Restaurant Carousel Section */
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 30px auto;
+        /* Paratha Section */
+        .paratha {
+            text-align: center;
+            padding: 30px 0;
+            background-color: #fff;
         }
 
-        h1 {
-            text-align: center;
+        .paratha h3 {
             font-size: 24px;
             margin-bottom: 20px;
+            color: #333;
         }
 
-        .carousel {
+        .paratha-container {
             display: flex;
             gap: 20px;
             overflow-x: auto;
             padding-bottom: 10px;
+            justify-content: center;
         }
 
-        .card {
-            position: relative;
+        .paratha-card {
             background-color: white;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 300px;
+            width: 250px;
             padding: 15px;
             text-align: center;
             flex-shrink: 0;
+            position: relative;
         }
 
-        .card img {
+        .paratha-card img {
             width: 100%;
             border-radius: 10px;
-            margin-bottom: 15px;
-        }
-
-        .card h2 {
-            font-size: 18px;
-            margin: 10px 0;
-        }
-
-        .details {
-            color: #666;
             margin-bottom: 10px;
         }
 
-        .rating {
-            color: green;
-            font-weight: bold;
+        .paratha-card h4 {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #333;
         }
 
-        .time {
-            color: #666;
-        }
-
-        .card p {
+        .paratha-card p {
             font-size: 14px;
             color: #555;
-            line-height: 1.5;
         }
 
-        .discount {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-size: 12px;
-        }
+        /* Footer Section */
         .footer {
             background-color: #000; /* Black background */
             color: #fff; /* White text */
@@ -268,63 +246,6 @@
             max-width: 150px; /* Adjust size as needed */
             height: auto;
         }
-        .cart {
-            position: relative;
-            display: inline-block;
-        }
-
-        .cart .cart-count {
-            position: absolute;
-            top: -10px;
-            right: -10px;
-            background-color: red;
-            color: white;
-            border-radius: 50%;
-            padding: 5px 10px;
-            font-size: 12px;
-        }
-
-        /* Cart Dropdown */
-        .cart-dropdown {
-            display: none;
-            position: absolute;
-            top: 30px;
-            right: 0;
-            background-color: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 10px;
-            width: 250px;
-        }
-
-        .cart-dropdown ul {
-            list-style: none;
-        }
-
-        .cart-dropdown ul li {
-            padding: 10px 0;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .cart-dropdown ul li:last-child {
-            border-bottom: none;
-        }
-
-        /* Items */
-        .category-container .category button {
-            margin-top: 10px;
-            padding: 8px 15px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .category-container .category button:hover {
-            background-color: #0056b3;
-        }
-
-       
     </style>
 </head>
 <body>
@@ -361,134 +282,66 @@
     <section class="categories">
         <h3>Popular Categories</h3>
         <div class="category-container">
-           <a href="biriyani.html"> <div class="category" >
+            <div class="category">
                 <img src="https://www.shutterstock.com/image-photo/dum-chicken-biriyani-close-image-600nw-2445682315.jpg" alt="Biryani"> 
-                <p>Biriyani</p>   
-            </div></a>
-            <a href="icecream.html"> <div class="category">
+                <p>Biryani</p>
+            </div>
+            <div class="category">
                 <img src="https://e0.pxfuel.com/wallpapers/1021/323/desktop-wallpaper-the-fresh-dessert-yummy-ice-cream.jpg" alt="Ice-Cream"> 
                 <p>Ice-Cream</p>
-                
-            </div></a>
-            <a href="cakes.html"> <div class="category">
+            </div>
+            <div class="category">
                 <img src="https://mrbrownbakery.com/image/images/GJ7uCwGiteTF24HTWBclkziVTdhpQeZWH23MvQfq.jpeg?p=full" alt="Cakes"> 
                 <p>Cakes</p>
-                
-            </div></a>
-            <a href="coffee.html"><div class="category">
+            </div>
+            <div class="category">
                 <img src="https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg" alt="Coffee"> 
                 <p>Coffee</p>
-                
-            </div></a>
-            <a href="khichdi.html"> <div class="category">
+            </div>
+            <div class="category">
                 <img src="https://www.maggi.in/sites/default/files/srh_recipes/f0f349a51947f81de93e374f21372f27.jpg" alt="Khichdi"> 
                 <p>Khichdi</p>
-               
-            </div></a>
-            <a href="paratha.html"><div class="category">
+            </div>
+            <div class="category">
                 <img src="https://i.ndtvimg.com/i/2018-05/aloo-ka-paratha_650x400_61525766113.jpg" alt="Paratha">
                 <p>Paratha</p>
-        
-            </div></a>
-            <a href="lassi.html"><div class="category">
+            </div>
+            <div class="category">
                 <img src="https://sandhyahariharan.co.uk/wp-content/uploads/2020/04/mango-lassi-1-of-1.jpg" alt="Lassi"> 
                 <p>Lassi</p>
-               
-            </div></a>
+            </div>
         </div>
     </section>
- 
 
-    <!-- Restaurant Carousel Section -->
-    <section class="container">
-        <h1>Top restaurant chains in Chhindwara</h1>
-        <div class="carousel">
-            <div class="card">
-                <div class="discount">₹150 OFF ABOVE ₹349</div>
-                <img src="https://static.vecteezy.com/system/resources/previews/035/375/532/large_2x/ai-generated-chicken-biryani-spicy-indian-malabar-biryani-hyderabadi-biryani-dum-biriyani-pulao-golden-bowl-photo.jpg" alt="Adil Hotel">
-                <h2>Adil Hotel</h2>
-                <div class="details">
-                    <span class="rating">★ 4.3</span> · <span class="time">45-50 mins</span>
-                </div>
-                <p>North Indian, Biryani, Tandoor<br>Chhindwara Locality</p>
+    <!-- Paratha Section -->
+    <section class="paratha">
+        <h3>Delicious Paratha Varieties</h3>
+        <div class="paratha-container">
+            <div class="paratha-card">
+                <img src="https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/submissions/recipe/2000832843/Ty6HjraTQqXcqJfX6mNK_Aloo%20paratha.jpg" alt="Aloo Paratha">
+                <h4>Aloo Paratha</h4>
+                <p>Stuffed with spiced mashed potatoes, a popular and hearty option.</p>
             </div>
-
-            <div class="card">
-                <div class="discount">60% OFF UPTO ₹110</div>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl2ExoO9ArN3mJ13eP-4AoLHhmgYrDGXCL4Q&s" alt="Rajbagh Restaurant">
-                <h2>Rajbagh Restaurant</h2>
-                <div class="details">
-                    <span class="rating">★ 3.7</span> · <span class="time">65-70 mins</span>
-                </div>
-                <p>North Indian, South Indian, Indian<br>Chhindwara Locality</p>
+            <div class="paratha-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAf61Qpxy0_MddfuMNwn_627ob0UQwJUTjmg&s" alt="Methi Paratha">
+                <h4>Methi Paratha</h4>
+                <p>Infused with fenugreek leaves, offering a unique and healthy flavor.</p>
             </div>
-
-            <div class="card">
-                <div class="discount">40% OFF UPTO ₹100</div>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl-rwdlgFgJeGFT1KKiGmefCEItL7CjXXxcA&s" alt="Wah Ji Wah">
-                <h2>Wah Ji Wah</h2>
-                <div class="details">
-                    <span class="rating">★ 4.5</span> · <span class="time">50-55 mins</span>
-                </div>
-                <p>North Indian, Fast Food, Beverages<br>Chhindwara Locality</p>
+            <div class="paratha-card">
+                <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2021/06/paneer-paratha-2-500x375.jpg" alt="Paneer Paratha">
+                <h4>Paneer Paratha</h4>
+                <p>Filled with a delicious paneer mixture, perfect for a filling meal.</p>
             </div>
-
-            <div class="card">
-                <div class="discount">₹200 OFF ABOVE ₹399</div>
-                <img src="https://media.istockphoto.com/id/518468635/photo/french-pastries-on-display-a-confectionery-shop.jpg?s=612x612&w=0&k=20&c=av7rYRCLckvDp6s9sGmA_S9Lp_fTSDSSOtmR0wWJ8nY=" alt="Sharma's Eatery">
-                <h2>Sharma's Eatery</h2>
-                <div class="details">
-                    <span class="rating">★ 4.1</span> · <span class="time">40-45 mins</span>
-                </div>
-                <p>Bakery items<br>Chhindwara Locality</p>
+            <div class="paratha-card">
+                <img src="https://aartimadan.com/wp-content/uploads/2021/02/Gobi-Paratha.jpg" alt="Gobi Paratha">
+                <h4>Gobi Paratha</h4>
+                <p>Stuffed with spiced cauliflower, a great vegetarian choice.</p>
             </div>
         </div>
-        <h1>Top Cafés and Ice Cream Parlours in Chhindwara</h1>
-<div class="carousel">
-    <div class="card">
-        <div class="discount">₹100 OFF ABOVE ₹299</div>
-        <img src="https://tracextech.com/wp-content/uploads/2022/02/coffee-traceability-solution.jpeg" alt="Cafe Mocha">
-        <h2>Café Mocha</h2>
-        <div class="details">
-            <span class="rating">★ 4.2</span> · <span class="time">30-35 mins</span>
-        </div>
-        <p>Coffee, Pastries, Snacks<br>Chhindwara Locality</p>
-    </div>
-
-    <div class="card">
-        <div class="discount">50% OFF UPTO ₹80</div>
-        <img src="https://media.gettyimages.com/id/157472912/photo/ice-cream-composition-on-a-bowl.jpg?s=612x612&w=gi&k=20&c=AniWX1OhaarUxCkgjUoKiA3bKVllK0upCylW6Z0PCMQ=" alt="The Ice Cream Factory">
-        <h2>The Ice Cream Factory</h2>
-        <div class="details">
-            <span class="rating">★ 4.7</span> · <span class="time">20-25 mins</span>
-        </div>
-        <p>Ice Creams, Sundaes, Shakes<br>Chhindwara Locality</p>
-    </div>
-
-    <div class="card">
-        <div class="discount">30% OFF UPTO ₹70</div>
-        <img src="https://insanelygoodrecipes.com/wp-content/uploads/2021/02/Red-Velvet-Cake-with-Raspberries.png" alt="Sweet Tooth Café">
-        <h2>Sweet Tooth Café</h2>
-        <div class="details">
-            <span class="rating">★ 4.3</span> · <span class="time">40-45 mins</span>
-        </div>
-        <p>Coffee, Desserts, Cakes<br>Chhindwara Locality</p>
-    </div>
-
-    <div class="card">
-        <div class="discount">₹150 OFF ABOVE ₹350</div>
-        <img src="https://images.healthshots.com/healthshots/en/uploads/2021/12/15184820/Smoothies.jpg" alt="Chillout Lounge">
-        <h2>Chillout Lounge</h2>
-        <div class="details">
-            <span class="rating">★ 4.4</span> · <span class="time">35-40 mins</span>
-        </div>
-        <p>Coffee, Smoothies, Ice Creams<br>Chhindwara Locality</p>
-    </div>
-</div>
-
     </section>
+
+    <!-- Footer -->
     <footer class="footer">
-       
         <div class="container">
             <img src="https://i.pinimg.com/736x/ae/f6/d0/aef6d084d09af1779ae1fb640d39a970.jpg" alt="Swiggy Logo" height="200" width="200">
             <div class="company-info">
@@ -515,7 +368,6 @@
                     <li><a href="#">Cookie Policy</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                 </ul>
-               
                 <ul>
                     <li><a href="#">Investor Relations</a></li>
                 </ul>
@@ -534,12 +386,9 @@
             </div>
         </div>
         <div class="bottom">
-           
-          
             <p>© 2024 Bundl Technologies Pvt. Ltd</p>
         </div>
     </footer>
-   
-  
+
 </body>
 </html>
